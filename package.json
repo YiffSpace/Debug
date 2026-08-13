@@ -1,0 +1,55 @@
+{
+  "name": "@yiffy/debug",
+  "version": "0.0.1",
+  "description": "A thread-local debug module",
+  "license": "MIT",
+  "author": "Donovan_DMC <hewwo@yiff.rocks>",
+  "type": "module",
+  "packageManager": "pnpm@11.3.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YiffSpace/Debug"
+  },
+  "homepage": "https://github.com/YiffSpace/Debug#readme",
+  "bugs": {
+    "url": "https://github.com/YiffSpace/Debug/issues"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "node --experimental-strip-types --test test/**/*.test.ts",
+    "prepublishOnly": "pnpm run build"
+  },
+  "dependencies": {
+    "ansi": "^0.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "@types/ansi": "^0.3.6",
+    "@types/node": "^26.2.0",
+    "@uwu-codes/eslint-config": "^2.0.10",
+    "eslint": "^9.39.5",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-unicorn": "^59.0.1",
+    "eslint-plugin-unused-imports": "^4.4.1",
+    "globals": "^16.5.0",
+    "jiti": "^2.6.1",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.66.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "package.json",
+    "tsconfig.json"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
